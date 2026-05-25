@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stone Museum</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature Museum</title>
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="overlay"></div>
 
-  <div class="stones">
+  <div class="icons">
 
-    <img src="images/stone1.png" class="stone" onclick="openInfo(0)" />
-    <img src="images/stone2.png" class="stone" onclick="openInfo(1)" />
-    <img src="images/stone3.png" class="stone" onclick="openInfo(2)" />
-    <img src="images/stone4.png" class="stone" onclick="openInfo(3)" />
-    <img src="images/stone5.png" class="stone" onclick="openInfo(4)" />
+    <img src="images/Alien.png" class="icon" onclick="openInfo(0)">
+    <img src="images/Angel.png" class="icon" onclick="openInfo(1)">
+    <img src="images/Dragon.png" class="icon" onclick="openInfo(2)">
+    <img src="images/Hirsch.png" class="icon" onclick="openInfo(3)">
+    <img src="images/Pfau.png" class="icon" onclick="openInfo(4)">
 
   </div>
 
   <div id="popup" class="popup hidden">
-    <div class="popup-content">
+
+    <div class="popup-box">
+
       <button class="close" onclick="closeInfo()">×</button>
 
       <h2 id="title"></h2>
+
       <p id="description"></p>
+
     </div>
+
   </div>
 
   <script src="script.js"></script>
