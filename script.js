@@ -20,6 +20,13 @@ const creatures = [
     description:
       "A rare volcanic stone shaped like a dragon, symbolizing power and transformation."
   },
+  
+  {
+  title: "Pfau",
+  image: "images/Pfau.png",
+  description:
+    "An elegant peacock-inspired stone form with shimmering textures and symbolic patterns."
+  },
 
   {
     title: "Hirsch",
