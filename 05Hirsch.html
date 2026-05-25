@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image One</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:url('background.jpg') no-repeat center center/cover;
+      min-height:100vh;
+      color:white;
+    }
+
+    .overlay{
+      background:rgba(0,0,0,0.6);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      padding:40px;
+      text-align:center;
+    }
+
+    img{
+      width:350px;
+      border-radius:20px;
+      border:5px solid white;
+      margin-bottom:30px;
+    }
+
+    h1{
+      margin-bottom:20px;
+      font-size:3rem;
+    }
+
+    p{
+      max-width:700px;
+      font-size:1.2rem;
+      line-height:1.8;
+    }
+
+    a{
+      margin-top:30px;
+      color:#00d9ff;
+      text-decoration:none;
+      font-size:1.1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay">
+
+    <img src="image1.png" alt="Image One">
+
+    <h1>Image One</h1>
+
+    <p>
+      This is the description of Image One.
+      You can write anything here about the image,
+      such as its meaning, history, or details.
+    </p>
+
+    <a href="index.html">← Back to Home</a>
+
+  </div>
+
+</body>
+</html>
