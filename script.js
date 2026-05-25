@@ -18,6 +18,12 @@ const creatures = [
       "A rare volcanic stone shaped like a dragon, symbolizing power and transformation."
   },
 
+    {
+    title: "Pfau",
+    description:
+      "A rare volcanic stone shaped like a dragon, symbolizing power and transformation."
+  },
+
   {
     title: "Hirsch",
     description:
