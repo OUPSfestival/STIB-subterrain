@@ -2,50 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Manuel Phil. Bischof for Espèces Compagnes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stone Museum</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <div class="overlay">
-    <h1>My Image Gallery</h1>
+  <div class="overlay"></div>
 
-    <div class="gallery">
+  <div class="stones">
 
-      <!-- Image 1 -->
-      <a href="page1.html">
-        <img src="images/image1.png" alt="Image 1">
-        <div class="caption">Alien.png</div>
-      </a>
+    <img src="images/stone1.png" class="stone" onclick="openInfo(0)" />
+    <img src="images/stone2.png" class="stone" onclick="openInfo(1)" />
+    <img src="images/stone3.png" class="stone" onclick="openInfo(2)" />
+    <img src="images/stone4.png" class="stone" onclick="openInfo(3)" />
+    <img src="images/stone5.png" class="stone" onclick="openInfo(4)" />
 
-      <!-- Image 2 -->
-      <a href="page2.html">
-        <img src="images/image2.png" alt="Image 2">
-        <div class="caption">Dragon.png</div>
-      </a>
+  </div>
 
-      <!-- Image 3 -->
-      <a href="page3.html">
-        <img src="images/image3.png" alt="Image 3">
-        <div class="caption">Angel.png</div>
-      </a>
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <button class="close" onclick="closeInfo()">×</button>
 
-            <!-- Image 4 -->
-      <a href="page3.html">
-        <img src="images/image3.png" alt="Image 3">
-        <div class="caption">Pfau.png</div>
-      </a>
-
-            <!-- Image 5 -->
-      <a href="page3.html">
-        <img src="images/image3.png" alt="Image 3">
-        <div class="caption">Hirsch.png</div>
-      </a>
-
+      <h2 id="title"></h2>
+      <p id="description"></p>
     </div>
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
