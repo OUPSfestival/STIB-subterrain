@@ -301,6 +301,42 @@ body {
   letter-spacing: 0.5px;
 }
 
+.credit {
+
+  position: fixed;
+
+  bottom: 18px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 20;
+
+  font-family:
+    "IBM Plex Mono",
+    monospace;
+
+  font-size:
+    clamp(9px, 2vw, 11px);
+
+  letter-spacing: 1px;
+
+  color:
+    rgba(255,255,255,0.46);
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+
+  white-space: nowrap;
+}
+
+.credit:hover {
+
+  color:
+    rgba(255,255,255,0.82);
+}
+
 /* Mobile */
 
 @media (max-width: 700px) {
