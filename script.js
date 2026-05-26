@@ -1,6 +1,4 @@
 const creatures = [
-
-
   {
     title: "Alien",
     image: "images/Alien.png",
