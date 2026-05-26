@@ -222,7 +222,9 @@ body {
   color: black;
 
   transform: scale(1.05);
+}
 
+/* Title on top */
 
 .museum-title {
 
@@ -258,8 +260,8 @@ body {
 
   backdrop-filter: blur(2px);
 }
-/* Mobile */
 
+/* Mobile */
 
 @media (max-width: 700px) {
 
@@ -275,3 +277,10 @@ body {
 
     line-height: 1.7;
   }
+
+  .icon {
+
+    width: 160px;
+    height: 160px;
+  }
+}
