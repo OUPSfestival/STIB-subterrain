@@ -181,65 +181,36 @@ body {
 
   position: fixed;
 
-  top: 26px;
+  top: 28px;
   left: 50%;
 
   transform: translateX(-50%);
 
   z-index: 20;
 
-  font-size: 14px;
+  font-family:
+    "IBM Plex Mono",
+    "SF Mono",
+    "Roboto Mono",
+    monospace;
 
-  letter-spacing: 4px;
+  font-size: 13px;
+
+  letter-spacing: 3px;
 
   text-transform: uppercase;
 
   color:
-    rgba(255,255,255,0.72);
+    rgba(255,255,255,0.68);
 
-  font-weight: 300;
+  font-weight: 400;
 
   white-space: nowrap;
 
   pointer-events: none;
+
+  backdrop-filter: blur(2px);
 }
-
-/* Close button */
-
-.close {
-
-  position: absolute;
-
-  top: 18px;
-  right: 20px;
-
-  width: 42px;
-  height: 42px;
-
-  border: none;
-
-  border-radius: 50%;
-
-  background:
-    rgba(255,255,255,0.08);
-
-  color: white;
-
-  font-size: 28px;
-
-  cursor: pointer;
-
-  transition: 0.25s ease;
-}
-
-.close:hover {
-
-  background:
-    rgba(255,255,255,0.16);
-
-  transform: scale(1.08);
-}
-
 /* Mobile */
 
 @media (max-width: 700px) {
