@@ -88,7 +88,7 @@ function loadIcons() {
   });
 }
 
-function openInfo(creature) {
+function closeInfo(creature) {
 
   document.getElementById("title")
     .innerHTML = `
@@ -110,6 +110,12 @@ function openInfo(creature) {
 
   document.getElementById("popup")
     .classList.remove("hidden");
+}
+
+function closeInfo() {
+
+  document.getElementById("popup")
+    .classList.add("hidden");
 }
 
 loadIcons();
