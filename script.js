@@ -1,6 +1,5 @@
 const creatures = [
 
-const creatures = [
 
   {
     title: "Alien",
