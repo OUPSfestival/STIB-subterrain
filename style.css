@@ -230,7 +230,7 @@ body {
 
   position: fixed;
 
-  top: 28px;
+  top: 20px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -243,9 +243,11 @@ body {
     "Roboto Mono",
     monospace;
 
-  font-size: 13px;
+  font-size:
+    clamp(9px, 2.4vw, 13px);
 
-  letter-spacing: 3px;
+  letter-spacing:
+    clamp(1px, 0.5vw, 3px);
 
   text-transform: uppercase;
 
@@ -259,6 +261,14 @@ body {
   pointer-events: none;
 
   backdrop-filter: blur(2px);
+
+  max-width: 92vw;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  text-align: center;
 }
 
 .archive-number {
