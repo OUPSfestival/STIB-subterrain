@@ -88,7 +88,7 @@ function loadIcons() {
   });
 }
 
-function closeInfo(creature) {
+function openInfo(creature) {
 
   document.getElementById("title")
     .innerHTML = `
