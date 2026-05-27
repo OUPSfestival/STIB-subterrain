@@ -22,4 +22,3 @@ voices.forEach((voice, index) => {
     voice.style.transform = 'translateY(0px)';
   }, index * 150);
 });
-
