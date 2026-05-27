@@ -1,9 +1,12 @@
+/* script.js */
+
 const cards = document.querySelectorAll('.result-card');
 
 cards.forEach(card => {
 
   card.addEventListener('mouseenter', () => {
     card.style.transform = 'translateY(-4px)';
+    card.style.transition = '0.25s ease';
   });
 
   card.addEventListener('mouseleave', () => {
@@ -13,6 +16,7 @@ cards.forEach(card => {
 });
 
 
+
 function setupPopup(openId, popupId, closeId){
 
   const open = document.getElementById(openId);
@@ -20,6 +24,7 @@ function setupPopup(openId, popupId, closeId){
   const close = document.getElementById(closeId);
 
   if(!open || !popup || !close){
+    console.log('Missing popup:', openId);
     return;
   }
 
@@ -40,6 +45,49 @@ function setupPopup(openId, popupId, closeId){
 }
 
 
+
+/* ORIGINAL POPUPS */
+
+setupPopup(
+  'openPopup',
+  'popup',
+  'closePopup'
+);
+
+setupPopup(
+  'openPopupOpuntia',
+  'popupOpuntia',
+  'closePopupOpuntia'
+);
+
+setupPopup(
+  'openPopupFlup',
+  'popupFlup',
+  'closePopupFlup'
+);
+
+setupPopup(
+  'openPopupCalcite',
+  'popupCalcite',
+  'closePopupCalcite'
+);
+
+setupPopup(
+  'openPopupNebula',
+  'popupNebula',
+  'closePopupNebula'
+);
+
+setupPopup(
+  'openPopupBacteria',
+  'popupBacteria',
+  'closePopupBacteria'
+);
+
+
+
+/* NEW POPUPS */
+
 setupPopup(
   'openPopupLove',
   'popupLove',
@@ -59,17 +107,38 @@ setupPopup(
 );
 
 setupPopup(
-  'openPopupCave',
-  'popupCave',
-  'closePopupCave'
-);
-
-setupPopup(
   'openPopupAlien',
   'popupAlien',
   'closePopupAlien'
 );
 
+setupPopup(
+  'openPopupAngel',
+  'popupAngel',
+  'closePopupAngel'
+);
+
+setupPopup(
+  'openPopupDragon',
+  'popupDragon',
+  'closePopupDragon'
+);
+
+setupPopup(
+  'openPopupHirsch',
+  'popupHirsch',
+  'closePopupHirsch'
+);
+
+setupPopup(
+  'openPopupMoon',
+  'popupMoon',
+  'closePopupMoon'
+);
+
+
+
+/* SEARCH */
 
 const searchInput = document.getElementById('searchInput');
 
@@ -93,6 +162,9 @@ searchInput.addEventListener('keyup', () => {
 
 });
 
+
+
+/* RANDOMIZE */
 
 const archiveGrid = document.querySelector('.archive-results-grid');
 
