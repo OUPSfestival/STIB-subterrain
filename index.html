@@ -1,351 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Archive</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- SEARCH -->
+<div class="hero-europeana">
+
+  <div class="search-container">
+    <input id="searchInput" type="text" placeholder="Search archive...">
+    <button>Search</button>
+  </div>
+
+</div>
+
+<!-- GRID -->
+<div class="archive-results-grid">
+
+  <!-- EXAMPLE CARD (HUMAN) -->
+  <div class="result-card" id="openPopupHuman" data-search="human bacteria symbiosis somatic exchange">
+
+    <div class="result-image">
+      <img src="images/BacteriaSymbiosis.png">
+    </div>
+
+    <div class="result-content">
+      <small>Human</small>
+      <h4>Somatic Exchange Networks</h4>
+      <p>Human-bacterial symbiosis in cave systems.</p>
+    </div>
+
+  </div>
+
+  <!-- ALIEN -->
+  <div class="result-card" id="openPopupAlien" data-search="alien aerosymbiont atmosphere">
+
+    <div class="result-image">
+      <img src="images/Alien.png">
+    </div>
+
+    <div class="result-content">
+      <small>Alien</small>
+      <h4>Aerosymbiont</h4>
+      <p>Atmospheric signal organism.</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- POPUPS -->
+
 <!-- HUMAN -->
-
 <div class="popup-overlay" id="popupHuman">
-
   <div class="popup-window">
-
     <button class="close-popup" id="closePopupHuman">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/BacteriaSymbiosis.png">
       </div>
 
       <div class="popup-content">
-
         <small>Human-Bacterial Symbiosis</small>
-
         <h2>Somatic Exchange Networks</h2>
 
-        <div class="popup-meta">
-
-          <div>
-            <span>Classification</span>
-            <strong>Respiratory Microbial System</strong>
-          </div>
-
-          <div>
-            <span>Behavior</span>
-            <strong>Atmospheric Co-Adaptation</strong>
-          </div>
-
-        </div>
-
-        <p>
-          Human respiratory systems inside the cave continuously
-          exchanged microorganisms with dense atmospheric bacterial layers.
-        </p>
-
-        <p>
-          Long-term exposure altered immune responses and produced
-          partially shared microbial ecosystems between visitors.
-        </p>
-
-        <p>
-          Researchers describe the cave atmosphere as a living
-          participant in collective human adaptation.
-        </p>
-
+        <p>Human respiratory systems exchanged microorganisms in cave environments.</p>
+        <p>Long-term exposure altered immune responses.</p>
+        <p>The cave atmosphere acted as a living system.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
-
-
 <!-- ALIEN -->
-
 <div class="popup-overlay" id="popupAlien">
-
   <div class="popup-window">
-
     <button class="close-popup" id="closePopupAlien">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/Alien.png">
       </div>
 
       <div class="popup-content">
-
         <small>Embossed Artefact</small>
-
         <h2>Aerosymbiont</h2>
 
-        <div class="popup-meta">
-
-          <div>
-            <span>Classification</span>
-            <strong>Atmospheric Signal Organism</strong>
-          </div>
-
-          <div>
-            <span>Function</span>
-            <strong>Transmission Interface</strong>
-          </div>
-
-        </div>
-
-        <p>
-          Metallic body structures appear fused with soft respiratory membranes
-          capable of filtering airborne mineral particles.
-        </p>
-
-        <p>
-          Researchers believe the artefact symbolized communication
-          between atmospheric organisms and human ritual systems.
-        </p>
-
-        <p>
-          Oxidized silver surfaces suggest prolonged environmental
-          exposure within humid cave chambers.
-        </p>
-
+        <p>Metallic structures fused with respiratory membranes.</p>
+        <p>Believed to be atmospheric communication systems.</p>
+        <p>Oxidized surfaces suggest long exposure.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
-
-
-<!-- ANGEL -->
-
-<div class="popup-overlay" id="popupAngel">
-
-  <div class="popup-window">
-
-    <button class="close-popup" id="closePopupAngel">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/Angel.png">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Embossed Artefact</small>
-
-        <h2>CareUnit-Seraph</h2>
-
-        <div class="popup-meta">
-
-          <div>
-            <span>Classification</span>
-            <strong>Biomechanical Ritual Structure</strong>
-          </div>
-
-          <div>
-            <span>Function</span>
-            <strong>Collective Care Interface</strong>
-          </div>
-
-        </div>
-
-        <p>
-          Wing-like extensions appear designed to distribute heat,
-          spores and mineral particles across enclosed spaces.
-        </p>
-
-        <p>
-          Organic residue embedded inside metallic joints suggests
-          repeated physical interaction with living organisms.
-        </p>
-
-        <p>
-          Researchers interpret the structure as a symbolic system
-          connecting care, memory and environmental maintenance.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- DRAGON -->
-
-<div class="popup-overlay" id="popupDragon">
-
-  <div class="popup-window">
-
-    <button class="close-popup" id="closePopupDragon">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/Dragon.png">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Embossed Artefact</small>
-
-        <h2>Thermadrone</h2>
-
-        <div class="popup-meta">
-
-          <div>
-            <span>Classification</span>
-            <strong>Hybrid Cave Organism</strong>
-          </div>
-
-          <div>
-            <span>Behavior</span>
-            <strong>Thermal Navigation</strong>
-          </div>
-
-        </div>
-
-        <p>
-          Skeletal metallic structures appear integrated with
-          biological tissue adapted to underground heat currents.
-        </p>
-
-        <p>
-          Researchers theorize the organism navigated cave systems
-          through thermal sensing rather than visual perception.
-        </p>
-
-        <p>
-          Carbon residue suggests repeated proximity to ritual fires
-          and geothermal mineral vents.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- HIRSCH -->
-
-<div class="popup-overlay" id="popupHirsch">
-
-  <div class="popup-window">
-
-    <button class="close-popup" id="closePopupHirsch">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/Hirsch.png">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Embossed Artefact</small>
-
-        <h2>Cervoid Interface</h2>
-
-        <div class="popup-meta">
-
-          <div>
-            <span>Classification</span>
-            <strong>Navigation Symbiosis Structure</strong>
-          </div>
-
-          <div>
-            <span>Function</span>
-            <strong>Environmental Synchronization</strong>
-          </div>
-
-        </div>
-
-        <p>
-          Antler-like conductive structures appear connected
-          to abandoned orientation and mapping technologies.
-        </p>
-
-        <p>
-          Researchers suggest the artefact symbolized cooperation
-          between migratory mammals and artificial navigation systems.
-        </p>
-
-        <p>
-          Mineral growth inside the metallic frame indicates
-          centuries of slow geological integration.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- MOON -->
-
-<div class="popup-overlay" id="popupMoon">
-
-  <div class="popup-window">
-
-    <button class="close-popup" id="closePopupMoon">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/Pfau.png">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Embossed Artefact</small>
-
-        <h2>Moonufowl</h2>
-
-        <div class="popup-meta">
-
-          <div>
-            <span>Classification</span>
-            <strong>Synthetic Feather Organism</strong>
-          </div>
-
-          <div>
-            <span>Behavior</span>
-            <strong>Emotional Signal Emission</strong>
-          </div>
-
-        </div>
-
-        <p>
-          Metallic feather membranes refract low cave light
-          into shifting chromatic communication patterns.
-        </p>
-
-        <p>
-          Researchers believe the structure evolved from decorative
-          ritual objects into autonomous signaling systems.
-        </p>
-
-        <p>
-          The artefact demonstrates increasing fusion between
-          emotional expression and synthetic biological materials.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
+</body>
+</html>
