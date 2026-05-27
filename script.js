@@ -44,41 +44,6 @@ function setupPopup(openId, popupId, closeId){
 
 
 
-/* POPUPS */
-
-
-setupPopup(
-  'openPopupOpuntia',
-  'popupOpuntia',
-  'closePopupOpuntia'
-);
-
-setupPopup(
-  'openPopupFlup',
-  'popupFlup',
-  'closePopupFlup'
-);
-
-setupPopup(
-  'openPopupCalcite',
-  'popupCalcite',
-  'closePopupCalcite'
-);
-
-setupPopup(
-  'openPopupNebula',
-  'popupNebula',
-  'closePopupNebula'
-);
-
-setupPopup(
-  'openPopupBacteria',
-  'popupBacteria',
-  'closePopupBacteria'
-);
-
-
-
 /* SEARCH */
 
 const searchInput = document.getElementById('searchInput');
@@ -120,11 +85,6 @@ cardsArray.forEach(card => {
 
 /* POPUPS */
 
-setupPopup(
-  'openPopup',
-  'popup',
-  'closePopup'
-);
 
 setupPopup(
   'openPopupOpuntia',
