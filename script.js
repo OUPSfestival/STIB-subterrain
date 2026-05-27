@@ -121,3 +121,10 @@ cardsArray.sort(() => Math.random() - 0.5);
 cardsArray.forEach(card => {
   archiveGrid.appendChild(card);
 });
+
+
+setupPopup(
+  'openPopup',
+  'popup',
+  'closePopup'
+);
