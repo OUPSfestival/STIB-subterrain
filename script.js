@@ -1,4 +1,3 @@
-
 const cards = document.querySelectorAll('.archive-card');
 
 cards.forEach(card => {
@@ -23,3 +22,5 @@ voices.forEach((voice, index) => {
     voice.style.transform = 'translateY(0px)';
   }, index * 150);
 });
+
+
