@@ -327,7 +327,23 @@ body{
   color:#777;
   margin-bottom:10px;
 }
+.section-title{
+  margin-bottom:28px;
+}
 
+.section-title h3{
+  margin:0;
+  font-size:34px;
+  font-weight:500;
+  letter-spacing:-0.5px;
+}
+
+.section-title span{
+  display:block;
+  margin-top:6px;
+  font-size:13px;
+  color:#777;
+}
 /* MOBILE */
 
 @media(max-width:900px){
