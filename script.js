@@ -85,6 +85,12 @@ cardsArray.forEach(card => {
 
 /* POPUPS */
 
+setupPopup(
+  'openPopup',
+  'popup',
+  'closePopup'
+);
+
 
 setupPopup(
   'openPopupOpuntia',
@@ -126,4 +132,46 @@ setupPopup(
   'openPopupAnt',
   'popupAnt',
   'closePopupAnt'
+);
+
+
+
+
+
+
+
+setupPopup(
+  'openPopupHuman',
+  'popupHuman',
+  'closePopupHuman'
+);
+
+setupPopup(
+  'openPopupAlien',
+  'popupAlien',
+  'closePopupAlien'
+);
+
+setupPopup(
+  'openPopupAngel',
+  'popupAngel',
+  'closePopupAngel'
+);
+
+setupPopup(
+  'openPopupDragon',
+  'popupDragon',
+  'closePopupDragon'
+);
+
+setupPopup(
+  'openPopupHirsch',
+  'popupHirsch',
+  'closePopupHirsch'
+);
+
+setupPopup(
+  'openPopupMoon',
+  'popupMoon',
+  'closePopupMoon'
 );
