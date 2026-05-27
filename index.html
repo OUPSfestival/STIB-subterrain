@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,6 +29,7 @@
 </header>
 
 
+
 <section class="hero-europeana">
 
   <div class="europeana-top">
@@ -48,10 +50,12 @@
   </div>
 
 
+
   <div class="search-container">
     <input type="text" placeholder="Search organisms, artefacts, field notes, oral histories...">
     <button>Search</button>
   </div>
+
 
 
   <div class="filter-row">
@@ -64,99 +68,134 @@
   </div>
 
 
+
   <div class="archive-results-grid">
 
-    <div class="result-card">
+
+
+    <!-- CEREUS -->
+
+    <div class="result-card clickable-card" id="openPopup">
 
       <div class="result-image"
       style="background-image:url('images/cactus01.jpg');"></div>
 
       <div class="result-content">
+
         <small>Plant Symbiosis</small>
+
         <h4>Cereus ambiguus</h4>
 
         <p>
           Toxic defensive needles coexist with
           soft nutrient-rich fruit spines.
         </p>
+
       </div>
 
     </div>
 
 
-<div class="result-card clickable-card" id="openPopup">
-  
+
+    <!-- OPUNTIA -->
+
+    <div class="result-card clickable-card" id="openPopupOpuntia">
+
       <div class="result-image"
       style="background-image:url('images/cactus02.jpg');"></div>
 
       <div class="result-content">
+
         <small>Plant Symbiosis</small>
+
         <h4>Opuntia dulcisferra</h4>
 
         <p>
           Underground water retention systems
           shared between neighboring root structures.
         </p>
+
       </div>
 
     </div>
 
 
-    <div class="result-card">
+
+    <!-- GREEN FLUP -->
+
+    <div class="result-card clickable-card" id="openPopupFlup">
 
       <div class="result-image"
       style="background-image:url('images/greenflup.avif');"></div>
 
       <div class="result-content">
+
         <small>Collective Organism</small>
+
         <h4>Viridiluma mollis</h4>
 
         <p>
           Small green organisms synchronizing
           body temperature during collective sleep.
         </p>
+
       </div>
 
     </div>
 
 
-    <div class="result-card">
+
+    <!-- CALCITE -->
+
+    <div class="result-card clickable-card" id="openPopupCalcite">
 
       <div class="result-image"
       style="background-image:url('images/stalactiten.jpg');"></div>
 
       <div class="result-content">
+
         <small>Mineral Formation</small>
+
         <h4>Photosensitive Calcite Structures</h4>
 
         <p>
           Stalactite systems displaying growth behavior
           similar to phototropic plants.
         </p>
+
       </div>
 
     </div>
 
 
-    <div class="result-card">
+
+    <!-- NEBULA -->
+
+    <div class="result-card clickable-card" id="openPopupNebula">
 
       <div class="result-image"
       style="background-image:url('images/plant01.jpg');"></div>
 
       <div class="result-content">
+
         <small>Smoke Adaptive Flora</small>
+
         <h4>Nebula Folia</h4>
 
         <p>
           Cave flora species activated through
           ritual smoke exposure.
         </p>
+
       </div>
 
     </div>
 
 
-    <div class="result-card">
+
+    <!-- BACTERIA -->
+
+    <div class="result-card clickable-card" id="openPopupBacteria">
 
       <div class="result-image"
       style="background-image:url('images/BacteriaCarpet.jpg');"></div>
@@ -176,9 +215,13 @@
 
     </div>
 
+
+
   </div>
 
 </section>
+
+
 
 
 
@@ -188,6 +231,7 @@
     <h3>Research Conflict Archive</h3>
     <span>Parallel Readings / Distributed Knowledge</span>
   </div>
+
 
 
   <div class="conflict-grid">
@@ -215,6 +259,8 @@
 
 
 
+
+
     <div class="conflict-main">
 
       <div class="conflict-header">
@@ -223,7 +269,10 @@
       </div>
 
 
+
       <div class="positions-grid">
+
+
 
         <div class="position-card">
 
@@ -240,6 +289,8 @@
           </p>
 
         </div>
+
+
 
 
 
@@ -260,6 +311,8 @@
 
 
 
+
+
         <div class="position-card">
 
           <div class="voice-role">
@@ -274,6 +327,9 @@
           </p>
 
         </div>
+
+
+
 
 
         <div class="position-card">
@@ -292,6 +348,8 @@
 
         </div>
 
+
+
       </div>
 
     </div>
@@ -301,8 +359,10 @@
 </section>
 
 
-  
-<!-- CEREUS AMBIGUUS -->
+
+
+
+<!-- CEREUS -->
 
 <div class="popup-overlay" id="popup">
 
@@ -356,6 +416,8 @@
   </div>
 
 </div>
+
+
 
 
 
@@ -415,6 +477,8 @@
 
 
 
+
+
 <!-- GREEN FLUP -->
 
 <div class="popup-overlay" id="popupFlup">
@@ -468,6 +532,8 @@
   </div>
 
 </div>
+
+
 
 
 
@@ -527,7 +593,9 @@
 
 
 
-<!-- NEBULA FOLIA -->
+
+
+<!-- NEBULA -->
 
 <div class="popup-overlay" id="popupNebula">
 
@@ -583,7 +651,9 @@
 
 
 
-<!-- PELVIBACTER -->
+
+
+<!-- BACTERIA -->
 
 <div class="popup-overlay" id="popupBacteria">
 
@@ -637,8 +707,9 @@
 
 </div>
 
-  <script src="script.js"></script>
 
-  
+
+<script src="script.js"></script>
+
 </body>
 </html>
