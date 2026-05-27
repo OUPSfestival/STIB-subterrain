@@ -1,8 +1,8 @@
 /* script.js */
 
-const cards = document.querySelectorAll('.result-card');
+const searchCards = document.querySelectorAll('.result-card');
 
-cards.forEach(card => {
+searchCards.forEach(card => {
 
   card.addEventListener('mouseenter', () => {
     card.style.transform = 'translateY(-4px)';
