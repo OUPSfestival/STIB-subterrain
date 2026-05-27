@@ -141,26 +141,28 @@ setupPopup(
 /* SEARCH */
 
 const searchInput = document.getElementById('searchInput');
+const cards = document.querySelectorAll('.result-card');
 
-searchInput.addEventListener('keyup', () => {
-
-  const value = searchInput.value.toLowerCase();
-
-  const cards = document.querySelectorAll('.result-card');
+function runSearch() {
+  const value = searchInput.value.toLowerCase().trim();
 
   cards.forEach(card => {
+    const searchable = (card.dataset.search || "").toLowerCase();
 
-    const searchable = card.dataset.search;
-
-    if(searchable.includes(value)){
-      card.style.display = 'block';
+    if (value === "" || searchable.includes(value)) {
+      card.style.display = "";
     } else {
-      card.style.display = '';
+      card.style.display = "none";
     }
-
   });
+}
 
-});
+// live search (typing)
+searchInput.addEventListener('input', runSearch);
+
+// button search (optional but useful)
+document.querySelector('.search-container button')
+  .addEventListener('click', runSearch);
 
 
 
