@@ -8,6 +8,8 @@ body {
 
   min-height: 100vh;
 
+  background-color: #2a171d;
+
   background-image: url("images/Background.jpg");
 
   background-size: cover;
