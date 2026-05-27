@@ -355,6 +355,24 @@ body{
   justify-content:center;
 }
 
+/* FULLSCREEN IMAGE VIEW */
+.image-fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  cursor: zoom-out;
+}
+
+.image-fullscreen img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
 .site-footer{
   padding:40px 34px;
   text-align:center;
