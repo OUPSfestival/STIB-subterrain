@@ -90,3 +90,28 @@ setupPopup(
   'popupBacteria',
   'closePopupBacteria'
 );
+
+
+/* SEARCH */
+
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('keyup', () => {
+
+  const value = searchInput.value.toLowerCase();
+
+  const cards = document.querySelectorAll('.result-card');
+
+  cards.forEach(card => {
+
+    const searchable = card.dataset.search;
+
+    if(searchable.includes(value)){
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+
+  });
+
+});
