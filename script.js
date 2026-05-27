@@ -46,11 +46,6 @@ function setupPopup(openId, popupId, closeId){
 
 /* POPUPS */
 
-setupPopup(
-  'openPopup',
-  'popup',
-  'closePopup'
-);
 
 setupPopup(
   'openPopupOpuntia',
