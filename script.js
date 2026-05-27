@@ -136,6 +136,12 @@ setupPopup(
   'closePopupMoon'
 );
 
+setupPopup(
+  'openPopupCave',
+  'popupCave',
+  'closePopupCave'
+);
+
 setupPopup('openPopupStars', 'popupStars', 'closePopupStars');
 setupPopup('openPopupTwins', 'popupTwins', 'closePopupTwins');
 
