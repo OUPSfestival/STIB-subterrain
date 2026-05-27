@@ -48,6 +48,26 @@ const creatures = [
       "Embossed silver relief fragment portraying ornamental mating exchanges between two incompatible synthetic organisms. Feather-like structures functioned as emotional transmission devices and eventually evolved into autonomous communication systems. Paleolithic Protocol Period. Excavation site: Red Cave 66 / Brussels Sector North. Approx. height 13 cm. Thickness 0.5 mm. Material: silver sheet alloy.",
     imageNumber: "RC66_DIG-0005",
     newName: "Moonufowl"
+  },
+
+   {
+    title: "Stars",
+    archive: "RC-66.01",
+    image: "images/Stars.png",
+    description:
+      ".",
+    imageNumber: "RC66_DIG-0001",
+    newName: ""
+  },
+
+   {
+    title: "Twins",
+    archive: "RC-66.01",
+    image: "images/Twins.png",
+    description:
+      ".",
+    imageNumber: "RC66_DIG-0001",
+    newName: ""
   }
 
 ];
