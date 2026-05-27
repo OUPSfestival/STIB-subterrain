@@ -123,8 +123,52 @@ cardsArray.forEach(card => {
 });
 
 
+/* POPUPS */
+
 setupPopup(
   'openPopup',
   'popup',
   'closePopup'
+);
+
+setupPopup(
+  'openPopupOpuntia',
+  'popupOpuntia',
+  'closePopupOpuntia'
+);
+
+setupPopup(
+  'openPopupFlup',
+  'popupFlup',
+  'closePopupFlup'
+);
+
+setupPopup(
+  'openPopupCalcite',
+  'popupCalcite',
+  'closePopupCalcite'
+);
+
+setupPopup(
+  'openPopupNebula',
+  'popupNebula',
+  'closePopupNebula'
+);
+
+setupPopup(
+  'openPopupBacteria',
+  'popupBacteria',
+  'closePopupBacteria'
+);
+
+setupPopup(
+  'openPopupLove',
+  'popupLove',
+  'closePopupLove'
+);
+
+setupPopup(
+  'openPopupAnt',
+  'popupAnt',
+  'closePopupAnt'
 );
