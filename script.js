@@ -44,52 +44,44 @@ function setupPopup(openId, popupId, closeId){
 
 
 
-/* CEREUS */
+/* POPUPS */
+
 setupPopup(
   'openPopup',
   'popup',
   'closePopup'
 );
 
-
-/* OPUNTIA */
 setupPopup(
   'openPopupOpuntia',
   'popupOpuntia',
   'closePopupOpuntia'
 );
 
-
-/* GREEN FLUP */
 setupPopup(
   'openPopupFlup',
   'popupFlup',
   'closePopupFlup'
 );
 
-
-/* CALCITE */
 setupPopup(
   'openPopupCalcite',
   'popupCalcite',
   'closePopupCalcite'
 );
 
-
-/* NEBULA */
 setupPopup(
   'openPopupNebula',
   'popupNebula',
   'closePopupNebula'
 );
 
-
-/* BACTERIA */
 setupPopup(
   'openPopupBacteria',
   'popupBacteria',
   'closePopupBacteria'
 );
+
 
 
 /* SEARCH */
@@ -114,4 +106,18 @@ searchInput.addEventListener('keyup', () => {
 
   });
 
+});
+
+
+
+/* RANDOMIZE ARCHIVE ORDER */
+
+const archiveGrid = document.querySelector('.archive-results-grid');
+
+const cardsArray = Array.from(archiveGrid.children);
+
+cardsArray.sort(() => Math.random() - 0.5);
+
+cardsArray.forEach(card => {
+  archiveGrid.appendChild(card);
 });
