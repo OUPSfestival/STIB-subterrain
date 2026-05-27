@@ -1,5 +1,3 @@
-/* script.js */
-
 const cards = document.querySelectorAll('.result-card');
 
 cards.forEach(card => {
@@ -46,7 +44,7 @@ function setupPopup(openId, popupId, closeId){
 
 
 
-/* ORIGINAL POPUPS */
+/* POPUPS */
 
 setupPopup(
   'openPopup',
@@ -86,58 +84,6 @@ setupPopup(
 
 
 
-/* NEW POPUPS */
-
-setupPopup(
-  'openPopupLove',
-  'popupLove',
-  'closePopupLove'
-);
-
-setupPopup(
-  'openPopupAnt',
-  'popupAnt',
-  'closePopupAnt'
-);
-
-setupPopup(
-  'openPopupHuman',
-  'popupHuman',
-  'closePopupHuman'
-);
-
-setupPopup(
-  'openPopupAlien',
-  'popupAlien',
-  'closePopupAlien'
-);
-
-setupPopup(
-  'openPopupAngel',
-  'popupAngel',
-  'closePopupAngel'
-);
-
-setupPopup(
-  'openPopupDragon',
-  'popupDragon',
-  'closePopupDragon'
-);
-
-setupPopup(
-  'openPopupHirsch',
-  'popupHirsch',
-  'closePopupHirsch'
-);
-
-setupPopup(
-  'openPopupMoon',
-  'popupMoon',
-  'closePopupMoon'
-);
-
-
-
 /* SEARCH */
 
 const searchInput = document.getElementById('searchInput');
@@ -164,7 +110,7 @@ searchInput.addEventListener('keyup', () => {
 
 
 
-/* RANDOMIZE */
+/* RANDOMIZE ARCHIVE ORDER */
 
 const archiveGrid = document.querySelector('.archive-results-grid');
 
