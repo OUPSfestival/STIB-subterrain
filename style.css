@@ -347,7 +347,38 @@ body {
 
 /* Mobile */
 
+@media (max-width: 900px) {
+
+  .icons {
+
+    gap: 40px 10px;
+
+    padding:
+      100px 20px 120px;
+  }
+
+  .icon {
+
+    width: 180px;
+    height: 180px;
+  }
+}
+
 @media (max-width: 700px) {
+
+  .icons {
+
+    gap: 22px;
+
+    padding:
+      90px 10px 100px;
+  }
+
+  .icon {
+
+    width: 160px;
+    height: 160px;
+  }
 
   .popup-box {
 
@@ -360,11 +391,5 @@ body {
     font-size: 15px;
 
     line-height: 1.7;
-  }
-
-  .icon {
-
-    width: 160px;
-    height: 160px;
   }
 }
