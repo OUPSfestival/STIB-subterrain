@@ -4,7 +4,6 @@ cards.forEach(card => {
 
   card.addEventListener('mouseenter', () => {
     card.style.transform = 'translateY(-4px)';
-    card.style.transition = '0.25s ease';
   });
 
   card.addEventListener('mouseleave', () => {
@@ -14,7 +13,6 @@ cards.forEach(card => {
 });
 
 
-
 function setupPopup(openId, popupId, closeId){
 
   const open = document.getElementById(openId);
@@ -22,7 +20,6 @@ function setupPopup(openId, popupId, closeId){
   const close = document.getElementById(closeId);
 
   if(!open || !popup || !close){
-    console.log('Missing popup:', openId);
     return;
   }
 
@@ -43,48 +40,36 @@ function setupPopup(openId, popupId, closeId){
 }
 
 
-
-/* POPUPS */
-
 setupPopup(
-  'openPopup',
-  'popup',
-  'closePopup'
+  'openPopupLove',
+  'popupLove',
+  'closePopupLove'
 );
 
 setupPopup(
-  'openPopupOpuntia',
-  'popupOpuntia',
-  'closePopupOpuntia'
+  'openPopupAnt',
+  'popupAnt',
+  'closePopupAnt'
 );
 
 setupPopup(
-  'openPopupFlup',
-  'popupFlup',
-  'closePopupFlup'
+  'openPopupHuman',
+  'popupHuman',
+  'closePopupHuman'
 );
 
 setupPopup(
-  'openPopupCalcite',
-  'popupCalcite',
-  'closePopupCalcite'
+  'openPopupCave',
+  'popupCave',
+  'closePopupCave'
 );
 
 setupPopup(
-  'openPopupNebula',
-  'popupNebula',
-  'closePopupNebula'
+  'openPopupAlien',
+  'popupAlien',
+  'closePopupAlien'
 );
 
-setupPopup(
-  'openPopupBacteria',
-  'popupBacteria',
-  'closePopupBacteria'
-);
-
-
-
-/* SEARCH */
 
 const searchInput = document.getElementById('searchInput');
 
@@ -108,9 +93,6 @@ searchInput.addEventListener('keyup', () => {
 
 });
 
-
-
-/* RANDOMIZE ARCHIVE ORDER */
 
 const archiveGrid = document.querySelector('.archive-results-grid');
 
