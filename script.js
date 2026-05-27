@@ -155,7 +155,7 @@ searchInput.addEventListener('keyup', () => {
     if(searchable.includes(value)){
       card.style.display = 'block';
     } else {
-      card.style.display = 'none';
+      card.style.display = '';
     }
 
   });
