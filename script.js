@@ -1,10 +1,5 @@
-/* =========================
-   HOVER EFFECT (CARDS)
-========================= */
-
-const searchCards = document.querySelectorAll('.result-card');
-
-searchCards.forEach(card => {
+/* HOVER EFFECT */
+document.querySelectorAll('.result-card').forEach(card => {
   card.addEventListener('mouseenter', () => {
     card.style.transform = 'translateY(-4px)';
     card.style.transition = '0.25s ease';
@@ -16,102 +11,88 @@ searchCards.forEach(card => {
 });
 
 
-/* =========================
-   POPUP SYSTEM (FIXED)
-========================= */
+/* POPUP SYSTEM */
+function setupPopup(openId, popupId, closeId) {
+  const open = document.getElementById(openId);
+  const popup = document.getElementById(popupId);
+  const close = document.getElementById(closeId);
 
-const popups = document.querySelectorAll('.popup-overlay');
+  if (!open || !popup || !close) {
+    console.warn('Missing popup:', openId, popupId, closeId);
+    return;
+  }
 
-/* OPEN POPUP */
-document.querySelectorAll('.result-card').forEach(card => {
-  card.addEventListener('click', () => {
-
-    const id = card.id.replace('openPopup', 'popup');
-    const popup = document.getElementById(id);
-
-    if (popup) {
-      popup.style.display = 'flex';
-    }
-
+  open.addEventListener('click', () => {
+    popup.style.display = 'flex';
   });
-});
 
-/* CLOSE BUTTON */
-document.querySelectorAll('.close-popup').forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.closest('.popup-overlay').style.display = 'none';
+  close.addEventListener('click', () => {
+    popup.style.display = 'none';
   });
-});
 
-/* CLICK OUTSIDE POPUP */
-popups.forEach(popup => {
   popup.addEventListener('click', (e) => {
     if (e.target === popup) {
       popup.style.display = 'none';
     }
   });
-});
+}
 
 
-/* =========================
-   SEARCH FUNCTION
-========================= */
+/* ALL POPUPS */
+const popupList = [
+  ['openPopup', 'popup', 'closePopup'],
+  ['openPopupOpuntia', 'popupOpuntia', 'closePopupOpuntia'],
+  ['openPopupFlup', 'popupFlup', 'closePopupFlup'],
+  ['openPopupCalcite', 'popupCalcite', 'closePopupCalcite'],
+  ['openPopupNebula', 'popupNebula', 'closePopupNebula'],
+  ['openPopupBacteria', 'popupBacteria', 'closePopupBacteria'],
+  ['openPopupLove', 'popupLove', 'closePopupLove'],
+  ['openPopupAnt', 'popupAnt', 'closePopupAnt'],
+  ['openPopupHuman', 'popupHuman', 'closePopupHuman'],
+  ['openPopupAlien', 'popupAlien', 'closePopupAlien'],
+  ['openPopupAngel', 'popupAngel', 'closePopupAngel'],
+  ['openPopupDragon', 'popupDragon', 'closePopupDragon'],
+  ['openPopupHirsch', 'popupHirsch', 'closePopupHirsch'],
+  ['openPopupMoon', 'popupMoon', 'closePopupMoon'],
+  ['openPopupStars', 'popupStars', 'closePopupStars'],
+  ['openPopupTwins', 'popupTwins', 'closePopupTwins'],
 
+  // ADD THIS IF YOU CREATE THE CAVE POPUP:
+  ['openPopupCave', 'popupCave', 'closePopupCave']
+];
+
+popupList.forEach(p => setupPopup(...p));
+
+
+/* SEARCH */
 const searchInput = document.getElementById('searchInput');
+const cards = document.querySelectorAll('.result-card');
 
 function runSearch() {
   const value = searchInput.value.toLowerCase().trim();
 
-  searchCards.forEach(card => {
+  cards.forEach(card => {
     const searchable = (card.dataset.search || "").toLowerCase();
 
-    if (value === "" || searchable.includes(value)) {
-      card.style.display = "";
-    } else {
-      card.style.display = "none";
-    }
+    card.style.display =
+      value === "" || searchable.includes(value)
+        ? ""
+        : "none";
   });
 }
 
-// live search
 searchInput.addEventListener('input', runSearch);
 
-// button search
 document.querySelector('.search-container button')
   .addEventListener('click', runSearch);
 
 
-/* =========================
-   RANDOMIZER (ARCHIVE ORDER)
-========================= */
-
+/* RANDOMIZE GRID */
 const archiveGrid = document.querySelector('.archive-results-grid');
+const cardsArray = Array.from(archiveGrid.children);
 
-if (archiveGrid) {
-  const cardsArray = Array.from(archiveGrid.children);
+cardsArray.sort(() => Math.random() - 0.5);
 
-  cardsArray.sort(() => Math.random() - 0.5);
-
-  cardsArray.forEach(card => {
-    archiveGrid.appendChild(card);
-  });
-}
-
-/* FULL IMAGE VIEW */
-
-const viewer = document.getElementById('imageViewer');
-const viewerImg = document.getElementById('imageViewerImg');
-
-/* click any popup image */
-document.querySelectorAll('.popup-image img').forEach(img => {
-  img.addEventListener('click', () => {
-    viewerImg.src = img.src;
-    viewer.style.display = 'flex';
-  });
-});
-
-/* close viewer */
-viewer.addEventListener('click', () => {
-  viewer.style.display = 'none';
-  viewerImg.src = '';
+cardsArray.forEach(card => {
+  archiveGrid.appendChild(card);
 });
