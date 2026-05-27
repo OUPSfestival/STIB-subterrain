@@ -96,3 +96,22 @@ if (archiveGrid) {
     archiveGrid.appendChild(card);
   });
 }
+
+/* FULL IMAGE VIEW */
+
+const viewer = document.getElementById('imageViewer');
+const viewerImg = document.getElementById('imageViewerImg');
+
+/* click any popup image */
+document.querySelectorAll('.popup-image img').forEach(img => {
+  img.addEventListener('click', () => {
+    viewerImg.src = img.src;
+    viewer.style.display = 'flex';
+  });
+});
+
+/* close viewer */
+viewer.addEventListener('click', () => {
+  viewer.style.display = 'none';
+  viewerImg.src = '';
+});
