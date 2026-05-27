@@ -13,21 +13,62 @@ cards.forEach(card => {
 
 });
 
-const popup = document.getElementById('popup');
-const openPopup = document.getElementById('openPopup');
-const closePopup = document.getElementById('closePopup');
 
-openPopup.addEventListener('click', () => {
-  popup.style.display = 'flex';
-});
 
-closePopup.addEventListener('click', () => {
-  popup.style.display = 'none';
-});
+function setupPopup(openId, popupId, closeId){
 
-popup.addEventListener('click', (e) => {
-  if(e.target === popup){
+  const open = document.getElementById(openId);
+  const popup = document.getElementById(popupId);
+  const close = document.getElementById(closeId);
+
+  if(!open || !popup || !close) return;
+
+  open.addEventListener('click', () => {
+    popup.style.display = 'flex';
+  });
+
+  close.addEventListener('click', () => {
     popup.style.display = 'none';
-  }
-});
+  });
 
+  popup.addEventListener('click', (e) => {
+    if(e.target === popup){
+      popup.style.display = 'none';
+    }
+  });
+
+}
+
+
+
+setupPopup('openPopup', 'popup', 'closePopup');
+
+setupPopup(
+  'openPopupOpuntia',
+  'popupOpuntia',
+  'closePopupOpuntia'
+);
+
+setupPopup(
+  'openPopupFlup',
+  'popupFlup',
+  'closePopupFlup'
+);
+
+setupPopup(
+  'openPopupCalcite',
+  'popupCalcite',
+  'closePopupCalcite'
+);
+
+setupPopup(
+  'openPopupNebula',
+  'popupNebula',
+  'closePopupNebula'
+);
+
+setupPopup(
+  'openPopupBacteria',
+  'popupBacteria',
+  'closePopupBacteria'
+);
