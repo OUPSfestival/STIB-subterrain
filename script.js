@@ -21,7 +21,10 @@ function setupPopup(openId, popupId, closeId){
   const popup = document.getElementById(popupId);
   const close = document.getElementById(closeId);
 
-  if(!open || !popup || !close) return;
+  if(!open || !popup || !close){
+    console.log('Missing popup:', openId);
+    return;
+  }
 
   open.addEventListener('click', () => {
     popup.style.display = 'flex';
@@ -41,32 +44,47 @@ function setupPopup(openId, popupId, closeId){
 
 
 
-setupPopup('openPopup', 'popup', 'closePopup');
+/* CEREUS */
+setupPopup(
+  'openPopup',
+  'popup',
+  'closePopup'
+);
 
+
+/* OPUNTIA */
 setupPopup(
   'openPopupOpuntia',
   'popupOpuntia',
   'closePopupOpuntia'
 );
 
+
+/* GREEN FLUP */
 setupPopup(
   'openPopupFlup',
   'popupFlup',
   'closePopupFlup'
 );
 
+
+/* CALCITE */
 setupPopup(
   'openPopupCalcite',
   'popupCalcite',
   'closePopupCalcite'
 );
 
+
+/* NEBULA */
 setupPopup(
   'openPopupNebula',
   'popupNebula',
   'closePopupNebula'
 );
 
+
+/* BACTERIA */
 setupPopup(
   'openPopupBacteria',
   'popupBacteria',
