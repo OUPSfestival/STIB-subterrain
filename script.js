@@ -1,9 +1,10 @@
-/* script.js */
+/* =========================
+   HOVER EFFECT (CARDS)
+========================= */
 
 const searchCards = document.querySelectorAll('.result-card');
 
 searchCards.forEach(card => {
-
   card.addEventListener('mouseenter', () => {
     card.style.transform = 'translateY(-4px)';
     card.style.transition = '0.25s ease';
@@ -12,149 +13,56 @@ searchCards.forEach(card => {
   card.addEventListener('mouseleave', () => {
     card.style.transform = 'translateY(0px)';
   });
-
 });
 
 
+/* =========================
+   POPUP SYSTEM (FIXED)
+========================= */
 
-function setupPopup(openId, popupId, closeId){
+const popups = document.querySelectorAll('.popup-overlay');
 
-  const open = document.getElementById(openId);
-  const popup = document.getElementById(popupId);
-  const close = document.getElementById(closeId);
+/* OPEN POPUP */
+document.querySelectorAll('.result-card').forEach(card => {
+  card.addEventListener('click', () => {
 
-  if(!open || !popup || !close){
-    console.log('Missing popup:', openId);
-    return;
-  }
+    const id = card.id.replace('openPopup', 'popup');
+    const popup = document.getElementById(id);
 
-  open.addEventListener('click', () => {
-    popup.style.display = 'flex';
+    if (popup) {
+      popup.style.display = 'flex';
+    }
+
   });
+});
 
-  close.addEventListener('click', () => {
-    popup.style.display = 'none';
+/* CLOSE BUTTON */
+document.querySelectorAll('.close-popup').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.popup-overlay').style.display = 'none';
   });
+});
 
+/* CLICK OUTSIDE POPUP */
+popups.forEach(popup => {
   popup.addEventListener('click', (e) => {
-    if(e.target === popup){
+    if (e.target === popup) {
       popup.style.display = 'none';
     }
   });
-
-}
-
+});
 
 
-/* ORIGINAL POPUPS */
-
-setupPopup(
-  'openPopup',
-  'popup',
-  'closePopup'
-);
-
-setupPopup(
-  'openPopupOpuntia',
-  'popupOpuntia',
-  'closePopupOpuntia'
-);
-
-setupPopup(
-  'openPopupFlup',
-  'popupFlup',
-  'closePopupFlup'
-);
-
-setupPopup(
-  'openPopupCalcite',
-  'popupCalcite',
-  'closePopupCalcite'
-);
-
-setupPopup(
-  'openPopupNebula',
-  'popupNebula',
-  'closePopupNebula'
-);
-
-setupPopup(
-  'openPopupBacteria',
-  'popupBacteria',
-  'closePopupBacteria'
-);
-
-
-
-/* NEW POPUPS */
-
-setupPopup(
-  'openPopupLove',
-  'popupLove',
-  'closePopupLove'
-);
-
-setupPopup(
-  'openPopupAnt',
-  'popupAnt',
-  'closePopupAnt'
-);
-
-setupPopup(
-  'openPopupHuman',
-  'popupHuman',
-  'closePopupHuman'
-);
-
-setupPopup(
-  'openPopupAlien',
-  'popupAlien',
-  'closePopupAlien'
-);
-
-setupPopup(
-  'openPopupAngel',
-  'popupAngel',
-  'closePopupAngel'
-);
-
-setupPopup(
-  'openPopupDragon',
-  'popupDragon',
-  'closePopupDragon'
-);
-
-setupPopup(
-  'openPopupHirsch',
-  'popupHirsch',
-  'closePopupHirsch'
-);
-
-setupPopup(
-  'openPopupMoon',
-  'popupMoon',
-  'closePopupMoon'
-);
-
-setupPopup(
-  'openPopupCave',
-  'popupCave',
-  'closePopupCave'
-);
-
-setupPopup('openPopupStars', 'popupStars', 'closePopupStars');
-setupPopup('openPopupTwins', 'popupTwins', 'closePopupTwins');
-
-
-/* SEARCH */
+/* =========================
+   SEARCH FUNCTION
+========================= */
 
 const searchInput = document.getElementById('searchInput');
-const cards = document.querySelectorAll('.result-card');
 
 function runSearch() {
   const value = searchInput.value.toLowerCase().trim();
 
-  cards.forEach(card => {
+  searchCards.forEach(card => {
     const searchable = (card.dataset.search || "").toLowerCase();
 
     if (value === "" || searchable.includes(value)) {
@@ -165,23 +73,26 @@ function runSearch() {
   });
 }
 
-// live search (typing)
+// live search
 searchInput.addEventListener('input', runSearch);
 
-// button search (optional but useful)
+// button search
 document.querySelector('.search-container button')
   .addEventListener('click', runSearch);
 
 
-
-/* RANDOMIZE */
+/* =========================
+   RANDOMIZER (ARCHIVE ORDER)
+========================= */
 
 const archiveGrid = document.querySelector('.archive-results-grid');
 
-const cardsArray = Array.from(archiveGrid.children);
+if (archiveGrid) {
+  const cardsArray = Array.from(archiveGrid.children);
 
-cardsArray.sort(() => Math.random() - 0.5);
+  cardsArray.sort(() => Math.random() - 0.5);
 
-cardsArray.forEach(card => {
-  archiveGrid.appendChild(card);
-});
+  cardsArray.forEach(card => {
+    archiveGrid.appendChild(card);
+  });
+}
