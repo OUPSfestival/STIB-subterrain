@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -11,6 +10,7 @@
 
 <body>
 
+<!-- HEADER -->
 <header class="topbar">
 
   <div class="title">
@@ -29,18 +29,20 @@
 </header>
 
 
-
+<!-- HERO -->
 <section class="hero-europeana">
 
   <div class="europeana-top">
+
     <div class="europeana-title">
       <small>RCr 66 // COLLECTIVE RESEARCH ARCHIVE</small>
       <h2>Search the Archive</h2>
     </div>
+
   </div>
 
 
-
+  <!-- SEARCH -->
   <div class="search-container">
 
     <input
@@ -54,7 +56,7 @@
   </div>
 
 
-
+  <!-- FILTERS -->
   <div class="filter-row">
     <span>Multispecies</span>
     <span>Biological Layers</span>
@@ -65,72 +67,121 @@
   </div>
 
 
-
-  <!-- RESULT CARDS -->
+  <!-- GRID -->
   <div class="archive-results-grid">
 
-    <div class="result-card"
-      id="openPopup"
-      data-search="cereus ambiguus cactus toxic flora fungal pollination symbiosis">
 
-      <img src="images/cactus01.jpg">
+    <!-- CEREUS -->
+    <div
+      class="result-card"
+      id="openPopup"
+      data-search="cereus ambiguus toxic flora cave cactus fungal pollination"
+    >
+      <img src="images/cactus01.jpg" alt="Cereus ambiguus">
       <h3>Cereus ambiguus</h3>
       <p>Defensive cactus organism.</p>
-
     </div>
 
 
-
-    <div class="result-card"
+    <!-- OPUNTIA -->
+    <div
+      class="result-card"
       id="openPopupOpuntia"
-      data-search="opuntia root systems underground reservoirs desert adaptation">
-
-      <img src="images/cactus02.jpg">
+      data-search="opuntia root systems underground reservoirs desert adaptation"
+    >
+      <img src="images/cactus02.jpg" alt="Opuntia dulcisferra">
       <h3>Opuntia dulcisferra</h3>
-      <p>Distributed underground water systems.</p>
-
+      <p>Underground water systems.</p>
     </div>
 
 
-
-    <div class="result-card"
+    <!-- FLUP -->
+    <div
+      class="result-card"
       id="openPopupFlup"
-      data-search="viridiluma mollis collective sleep cave fauna">
-
-      <img src="images/greenflup.png">
+      data-search="viridiluma mollis collective sleep thermal synchronization"
+    >
+      <img src="images/greenflup.png" alt="Viridiluma mollis">
       <h3>Viridiluma mollis</h3>
       <p>Collective thermal organisms.</p>
-
     </div>
 
 
-
-    <div class="result-card"
+    <!-- CALCITE -->
+    <div
+      class="result-card"
       id="openPopupCalcite"
-      data-search="calcite mineral intelligence crystal ecology">
-
-      <img src="images/stalactiten.jpg">
+      data-search="calcite crystal ecology mineral intelligence"
+    >
+      <img src="images/stalactiten.jpg" alt="Calcite">
       <h3>Photosensitive Calcite</h3>
       <p>Reactive mineral formations.</p>
-
     </div>
 
 
-
-    <div class="result-card"
+    <!-- NEBULA -->
+    <div
+      class="result-card"
       id="openPopupNebula"
-      data-search="nebula folia ritual smoke spores adaptive flora">
-
-      <img src="images/plant01.jpg">
+      data-search="nebula folia smoke adaptive flora cave rituals"
+    >
+      <img src="images/plant01.jpg" alt="Nebula Folia">
       <h3>Nebula Folia</h3>
-      <p>Smoke activated flora systems.</p>
-
+      <p>Smoke activated flora.</p>
     </div>
+
+
+    <!-- BACTERIA -->
+    <div
+      class="result-card"
+      id="openPopupBacteria"
+      data-search="pelvibacter lucens fluorescent bacteria microbial colony"
+    >
+      <img src="images/BacteriaCarpet.jpg" alt="Pelvibacter lucens">
+      <h3>Pelvibacter lucens</h3>
+      <p>Fluorescent bacterial colony.</p>
+    </div>
+
+
+    <!-- LOVE -->
+    <div
+      class="result-card"
+      id="openPopupLove"
+      data-search="lichen exchange systems spores mineral exchange"
+    >
+      <img src="images/love.png" alt="Lichen Exchange Systems">
+      <h3>Lichen Exchange Systems</h3>
+      <p>Mutual biological structures.</p>
+    </div>
+
+
+    <!-- ANT -->
+    <div
+      class="result-card"
+      id="openPopupAnt"
+      data-search="formica mycelia fungal agriculture nutrient cycles"
+    >
+      <img src="images/ant-mushroom.png" alt="Formica mycelia">
+      <h3>Formica mycelia</h3>
+      <p>Ant-fungal systems.</p>
+    </div>
+
+
+    <!-- HUMAN -->
+    <div
+      class="result-card"
+      id="openPopupHuman"
+      data-search="somatic exchange microbiome respiratory exchange"
+    >
+      <img src="images/Bacteriasymbiosis.jpg" alt="Somatic Exchange Networks">
+      <h3>Somatic Exchange Networks</h3>
+      <p>Human microbial adaptation.</p>
+    </div>
+
 
   </div>
 
 </section>
-
 
 
 <!-- ========================= -->
@@ -138,9 +189,7 @@
 <!-- ========================= -->
 
 
-
 <!-- CEREUS -->
-
 <div id="popup" class="popup-overlay">
 
   <div class="popup-window">
@@ -150,7 +199,7 @@
     <div class="popup-grid">
 
       <div class="popup-image">
-        <img src="images/cactus01.jpg">
+        <img src="images/cactus01.jpg" alt="Cereus ambiguus">
       </div>
 
       <div class="popup-content">
@@ -176,9 +225,7 @@
 </div>
 
 
-
 <!-- OPUNTIA -->
-
 <div id="popupOpuntia" class="popup-overlay">
 
   <div class="popup-window">
@@ -188,7 +235,7 @@
     <div class="popup-grid">
 
       <div class="popup-image">
-        <img src="images/cactus02.jpg">
+        <img src="images/cactus02.jpg" alt="Opuntia dulcisferra">
       </div>
 
       <div class="popup-content">
@@ -202,7 +249,7 @@
         </div>
 
         <p>
-          Opuntia dulcisferra develops underground root systems that redistribute water between neighboring organisms.
+          Opuntia dulcisferra develops underground root systems redistributing water between neighboring organisms.
         </p>
 
       </div>
@@ -214,129 +261,13 @@
 </div>
 
 
-
-<!-- FLUP -->
-
-<div id="popupFlup" class="popup-overlay">
-
-  <div class="popup-window">
-
-    <button id="closePopupFlup" class="close-popup">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/greenflup.png">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Collective Organism</small>
-
-        <h2>Viridiluma mollis</h2>
-
-        <div class="popup-keywords">
-          collective sleep • thermal synchronization • cave fauna
-        </div>
-
-        <p>
-          Viridiluma mollis forms dense sleeping clusters regulating body temperature collectively.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- CALCITE -->
-
-<div id="popupCalcite" class="popup-overlay">
-
-  <div class="popup-window">
-
-    <button id="closePopupCalcite" class="close-popup">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/stalactiten.jpg">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Mineral Formation</small>
-
-        <h2>Photosensitive Calcite Structures</h2>
-
-        <div class="popup-keywords">
-          calcite growth • crystal ecology • geological memory
-        </div>
-
-        <p>
-          These calcite formations redirect mineral growth toward illuminated surfaces.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- NEBULA -->
-
-<div id="popupNebula" class="popup-overlay">
-
-  <div class="popup-window">
-
-    <button id="closePopupNebula" class="close-popup">×</button>
-
-    <div class="popup-grid">
-
-      <div class="popup-image">
-        <img src="images/plant01.jpg">
-      </div>
-
-      <div class="popup-content">
-
-        <small>Smoke Adaptive Flora</small>
-
-        <h2>Nebula Folia</h2>
-
-        <div class="popup-keywords">
-          ritual smoke • airborne spores • cave rituals
-        </div>
-
-        <p>
-          Nebula Folia activates during ritual smoke exposure and releases reflective spores.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-
-
-<!-- IMAGE FULLSCREEN -->
-
+<!-- IMAGE VIEWER -->
 <div id="imageViewer" class="image-fullscreen">
-  <img id="imageViewerImg" src="">
+  <img id="imageViewerImg" src="" alt="Fullscreen Preview">
 </div>
 
 
-
+<!-- FOOTER -->
 <footer class="site-footer">
 
   <p>
@@ -348,6 +279,8 @@
 
 </footer>
 
+
+<!-- SCRIPT -->
 <script src="script.js"></script>
 
 </body>
