@@ -455,6 +455,10 @@ body{
     height:auto;
     aspect-ratio:1/1;
  }
+    .filter-row{
+    display:none;
+
+  }
   
 .contain-image{
   object-fit:contain !important;
