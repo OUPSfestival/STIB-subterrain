@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,12 +29,18 @@
 </header>
 
 
+
 <section class="hero-europeana">
 
-  <div class="europeana-title">
-    <small>RCr 66 // COLLECTIVE RESEARCH ARCHIVE</small>
-    <h2>Search the Archive</h2>
+  <div class="europeana-top">
+
+    <div class="europeana-title">
+      <small>RCr 66 // COLLECTIVE RESEARCH ARCHIVE</small>
+      <h2>Search the Archive</h2>
+    </div>
+
   </div>
+
 
 
   <div class="search-container">
@@ -44,9 +51,10 @@
       placeholder="Search organisms, artefacts, field notes, oral histories..."
     >
 
-    <button id="searchButton">Search</button>
+    <button>Search</button>
 
   </div>
+
 
 
   <div class="filter-row">
@@ -59,164 +67,538 @@
   </div>
 
 
+
   <div class="archive-results-grid">
 
 
-    <!-- CARD -->
+
+<!-- CEREUS -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopup"
+  data-search="cactus plant symbiosis cereus ambiguus poison fruit"
+>
+
+  <div class="result-image">
+    <img src="images/cactus01.jpg" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Plant Symbiosis</small>
+
+    <h4>Cereus ambiguus</h4>
+
+    <p>
+      Toxic defensive needles coexist with
+      soft nutrient-rich fruit spines.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- OPUNTIA -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupOpuntia"
+  data-search="cactus roots water symbiosis opuntia"
+>
+
+  <div class="result-image">
+    <img src="images/cactus02.jpg" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Plant Symbiosis</small>
+
+    <h4>Opuntia dulcisferra</h4>
+
+    <p>
+      Underground water retention systems
+      shared between neighboring root structures.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- GREEN FLUP -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupFlup"
+  data-search="green fluffy animal collective organism"
+>
+
+  <div class="result-image">
+    <img src="images/greenflup.png" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Collective Organism</small>
+
+    <h4>Viridiluma mollis</h4>
+
+    <p>
+      Small green organisms synchronizing
+      body temperature during collective sleep.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- CALCITE -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupCalcite"
+  data-search="stalactite calcite minerals plant cave"
+>
+
+  <div class="result-image">
+    <img src="images/stalactiten.jpg" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Mineral Formation</small>
+
+    <h4>Photosensitive Calcite Structures</h4>
+
+    <p>
+      Stalactite systems displaying growth behavior
+      similar to phototropic plants.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- NEBULA -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupNebula"
+  data-search="plant smoke ritual flora"
+>
+
+  <div class="result-image">
+    <img src="images/plant01.jpg" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Smoke Adaptive Flora</small>
+
+    <h4>Nebula Folia</h4>
+
+    <p>
+      Cave flora species activated through
+      ritual smoke exposure.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- BACTERIA -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupBacteria"
+  data-search="bacteria fluorescent carpet cave"
+>
+
+  <div class="result-image">
+    <img src="images/BacteriaCarpet.jpg" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Bacterial Colony</small>
+
+    <h4>Pelvibacter lucens</h4>
+
+    <p>
+      Fluorescent bacterial floor consortium
+      producing bioluminescent mineral textures.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- LOVE -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupLove"
+  data-search="love symbiosis lichen bacteria stalactite minerals"
+>
+
+  <div class="result-image">
+    <img src="images/love.png" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Symbiotic Relation</small>
+
+    <h4>Lichen Exchange Systems</h4>
+
+    <p>
+      Mineral surfaces, bacterial films and plant spores
+      forming long-term mutual growth structures.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- ANT -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupAnt"
+  data-search="ant mushroom fungus symbiosis"
+>
+
+  <div class="result-image">
+    <img src="images/ant-mushroom.png" loading="lazy" >
+  </div>
+
+  <div class="result-content">
+
+    <small>Fungal Symbiosis</small>
+
+    <h4>Formica mycelia</h4>
+
+    <p>
+      Ant colonies cultivating fungal membranes
+      through reciprocal nutrient exchange systems.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- HUMAN -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupHuman"
+  data-search="human bacteria microbiome atmosphere"
+>
+
+  <div class="result-image">
+    <img src="images/Bacteriasymbiosis.jpg" loading="lazy">
+  </div>
+
+  <div class="result-content">
+
+    <small>Human-Bacterial Symbiosis</small>
+
+    <h4>Somatic Exchange Networks</h4>
+
+    <p>
+      Human respiratory systems interacting
+      continuously with bacterial cave atmospheres.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- ALIEN -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupAlien"
+  data-search="alien aerosymbiont artefact silver"
+>
+
+  <div class="result-image">
+    <img src="images/Alien.png" loading="lazy" style="width:30%; margin:auto; display:block;">
+  </div>
+
+  <div class="result-content">
+
+    <small>Embossed Artefact</small>
+
+    <h4>Aerosymbiont</h4>
+
+    <p>
+      Atmospheric signal organism fused with
+      a human transmission system.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- ANGEL -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupAngel"
+  data-search="angel seraph biomechanical mineral"
+>
+
+  <div class="result-image">
+    <img src="images/Angel.png" loading="lazy" style="width:60%; margin:auto; display:block;">
+  </div>
+
+  <div class="result-content">
+
+    <small>Embossed Artefact</small>
+
+    <h4>CareUnit-Seraph</h4>
+
+    <p>
+      Ritual attachment structure connecting
+      biomechanical care systems and mineral memory.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- DRAGON -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupDragon"
+  data-search="dragon thermadrone cave organism drone"
+>
+
+  <div class="result-image">
+    <img src="images/Dragon.png" loading="lazy" style="width:60%; margin:auto; display:block;">
+  </div>
+
+  <div class="result-content">
+
+    <small>Embossed Artefact</small>
+
+    <h4>Thermadrone</h4>
+
+    <p>
+      Hybrid cave organism merged with
+      artificial skeletal drone structures.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- HIRSCH -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupHirsch"
+  data-search="hirsch mammal navigation interface"
+>
+
+  <div class="result-image">
+    <img src="images/Hirsch.png" loading="lazy" style="width:50%; margin:auto; display:block;">
+  </div>
+
+  <div class="result-content">
+
+    <small>Embossed Artefact</small>
+
+    <h4>Cervoid Interface</h4>
+
+    <p>
+      Forest mammal synchronization with
+      abandoned navigational technologies.
+    </p>
+
+  </div>
+
+</div>
+
+
+
+
+
+<!-- MOON -->
+
+<div
+  class="result-card clickable-card"
+  id="openPopupMoon"
+  data-search="moonufowl synthetic feather communication"
+>
+
+  <div class="result-image">
+    <img src="images/Pfau.png" loading="lazy" style="width:40%; margin:auto; display:block;">
+  </div>
+
+  <div class="result-content">
+
+    <small>Embossed Artefact</small>
+
+    <h4>Moonufowl</h4>
+
+    <p>
+      Synthetic feather systems evolving
+      into autonomous emotional communication.
+    </p>
+
+  </div>
+
+</div>
+
+
+    <!-- star -->
+    
+<div
+  class="result-card clickable-card"
+  id="openPopupStars"
+  data-search="stars cosmic light energy stellar field astronomy"
+>
+
+  <div class="result-image">
+    <img src="images/Stars.png" loading="lazy" >
+  </div>
+
+  <div class="result-content">
+
+    <small>Cosmic System</small>
+
+    <h4>Stellar Drift Field</h4>
+
+    <p>
+      Interconnected stellar clusters producing
+      low-frequency luminous communication patterns.
+    </p>
+
+  </div>
+
+</div>
+
+
+    
+<!-- TWINS -->
 
     <div
-      class="result-card"
-      data-popup="popup-cereus"
-      data-search="cactus plant symbiosis cereus ambiguus poison fruit"
-    >
+  class="result-card clickable-card"
+  id="openPopupTwins"
+  data-search="twins human duplication mirrored bodies genetic symmetry"
+>
 
-      <div class="result-image">
-        <img src="images/cactus01.jpg" loading="lazy">
-      </div>
+  <div class="result-image">
+    <img src="images/Twins.png" loading="lazy" style="width:60%; margin:auto; display:block;">
+  </div>
 
-      <div class="result-content">
-        <small>Plant Symbiosis</small>
-        <h4>Cereus ambiguus</h4>
-        <p>
-          Toxic defensive needles coexist with
-          soft nutrient-rich fruit spines.
-        </p>
-      </div>
+  <div class="result-content">
 
-    </div>
+    <small>Biological Mirror Case</small>
 
+    <h4>Genetic Dual Formation</h4>
 
-    <!-- CARD -->
+    <p>
+      Parallel human development systems showing
+      synchronized biological and emotional growth patterns.
+    </p>
 
-    <div
-      class="result-card"
-      data-popup="popup-opuntia"
-      data-search="cactus roots water symbiosis opuntia"
-    >
+  </div>
 
-      <div class="result-image">
-        <img src="images/cactus02.jpg" loading="lazy">
-      </div>
+</div>
 
-      <div class="result-content">
-        <small>Plant Symbiosis</small>
-        <h4>Opuntia dulcisferra</h4>
-        <p>
-          Underground water retention systems
-          shared between neighboring root structures.
-        </p>
-      </div>
+<!-- CAVE -->
+    
+<div
+  class="result-card clickable-card"
+  id="openPopupCave"
+  data-search="cave ssymnac underground system geology atmosphere mineral network"
+>
 
-    </div>
+  <div class="result-image">
+    <img src="images/cave.png" loading="lazy">
+  </div>
 
+  <div class="result-content">
 
-    <!-- CARD -->
+    <small>Geological Field System</small>
 
-    <div
-      class="result-card"
-      data-popup="popup-flup"
-      data-search="green fluffy animal collective organism"
-    >
+    <h4>Ssymnac Cave Complex</h4>
 
-      <div class="result-image">
-        <img src="images/greenflup.png" loading="lazy">
-      </div>
+    <p>
+      Subterranean systems mediating exchanges between mineral formations,
+      atmospheric flows, and multispecies biological residues.
+    </p>
 
-      <div class="result-content">
-        <small>Collective Organism</small>
-        <h4>Viridiluma mollis</h4>
-        <p>
-          Small green organisms synchronizing
-          body temperature during collective sleep.
-        </p>
-      </div>
+  </div>
 
-    </div>
-
-
-    <!-- CARD -->
-
-    <div
-      class="result-card"
-      data-popup="popup-calcite"
-      data-search="stalactite calcite minerals plant cave"
-    >
-
-      <div class="result-image">
-        <img src="images/stalactiten.jpg" loading="lazy">
-      </div>
-
-      <div class="result-content">
-        <small>Mineral Formation</small>
-        <h4>Photosensitive Calcite Structures</h4>
-        <p>
-          Stalactite systems displaying growth behavior
-          similar to phototropic plants.
-        </p>
-      </div>
-
-    </div>
-
-
-    <!-- CARD -->
-
-    <div
-      class="result-card"
-      data-popup="popup-nebula"
-      data-search="plant smoke ritual flora"
-    >
-
-      <div class="result-image">
-        <img src="images/plant01.jpg" loading="lazy">
-      </div>
-
-      <div class="result-content">
-        <small>Smoke Adaptive Flora</small>
-        <h4>Nebula Folia</h4>
-        <p>
-          Cave flora species activated through
-          ritual smoke exposure.
-        </p>
-      </div>
-
-    </div>
-
-
-    <!-- CARD -->
-
-    <div
-      class="result-card"
-      data-popup="popup-cave"
-      data-search="cave ssymnac underground system geology atmosphere mineral network"
-    >
-
-      <div class="result-image">
-        <img src="images/cave.png" loading="lazy">
-      </div>
-
-      <div class="result-content">
-        <small>Geological Field System</small>
-        <h4>Ssymnac Cave Complex</h4>
-        <p>
-          Subterranean systems mediating exchanges between mineral formations,
-          atmospheric flows, and multispecies biological residues.
-        </p>
-      </div>
-
-    </div>
+</div>
+    
 
   </div>
 
 </section>
 
 
-<section class="conflict-layout">
+
+<section class="section conflict-layout">
 
   <div class="section-title">
     <h3>Research Conflict Archive</h3>
     <span>Parallel Readings / Distributed Knowledge</span>
   </div>
-
 
   <div class="conflict-grid">
 
@@ -242,6 +624,7 @@
     </div>
 
 
+
     <div class="conflict-main">
 
       <div class="conflict-header">
@@ -249,48 +632,74 @@
         <h3>The Function of the Artefacts</h3>
       </div>
 
-
       <div class="positions-grid">
 
         <div class="position-card">
-          <div class="voice-role">Field Researcher / Material Ecology</div>
+
+          <div class="voice-role">
+            Field Researcher / Material Ecology
+          </div>
+
           <h4>Dr. Mireya Sol</h4>
+
           <p>
             Artefacts appear less as possessions and more
             as circulation points between organisms,
             environments and touch.
           </p>
+
         </div>
 
 
+
         <div class="position-card">
-          <div class="voice-role">Child Visitor / Age 9</div>
+
+          <div class="voice-role">
+            Child Visitor / Age 9
+          </div>
+
           <h4>Amira K.</h4>
+
           <p>
             The objects look changed because many different
             things held them for a long time.
           </p>
+
         </div>
 
 
+
         <div class="position-card">
-          <div class="voice-role">Local Fisher / Lake Region</div>
+
+          <div class="voice-role">
+            Local Fisher / Lake Region
+          </div>
+
           <h4>Tomas Vel</h4>
+
           <p>
             Metal fragments collect red mineral layers
             faster during warmer seasons.
           </p>
+
         </div>
 
 
+
         <div class="position-card">
-          <div class="voice-role">Collective Annotation</div>
+
+          <div class="voice-role">
+            Collective Annotation
+          </div>
+
           <h4>Anonymous Entry</h4>
+
           <p>
             Separation between human, mineral,
             ritual and bacteria may have become
             structurally impossible.
           </p>
+
         </div>
 
       </div>
@@ -302,257 +711,319 @@
 </section>
 
 
+<!-- POPUP -->
+
 <!-- POPUPS -->
 
-<div id="popup-cereus" class="popup-overlay">
-
-  <div class="popup-window fade-up">
-
-    <button class="close-popup">×</button>
+<div id="popup" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopup" class="close-popup">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/cactus01.jpg">
       </div>
 
       <div class="popup-content">
-
         <small>Plant Symbiosis</small>
-
         <h2>Cereus ambiguus</h2>
-
-        <div class="popup-meta">
-          <div>
-            <span>Observed Layer</span>
-            <strong>Southern Dry Zone</strong>
-          </div>
-
-          <div>
-            <span>Archive Reference</span>
-            <strong>PL-44-A</strong>
-          </div>
-        </div>
-
-        <p>
-          Cereus ambiguus displays contradictory biological behaviors.
-          Defensive toxin needles emerge simultaneously beside soft fruit tissue
-          carrying high concentrations of hydration enzymes.
-        </p>
-
-        <p>
-          Researchers suspect the organism evolved in response to unstable cave
-          migration cycles, where attraction and defense became inseparable survival mechanisms.
-        </p>
-
+        <p>Toxic defensive needles coexist with soft nutrient-rich fruit spines.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
 
-<div id="popup-opuntia" class="popup-overlay">
-
-  <div class="popup-window fade-up">
-
-    <button class="close-popup">×</button>
+<div id="popupOpuntia" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupOpuntia" class="close-popup">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/cactus02.jpg">
       </div>
 
       <div class="popup-content">
-
         <small>Plant Symbiosis</small>
-
         <h2>Opuntia dulcisferra</h2>
-
-        <p>
-          Root systems belonging to separate Opuntia organisms were found exchanging
-          water through porous mineral corridors beneath the cave floor.
-        </p>
-
-        <p>
-          During prolonged dry cycles, isolated plants redistributed moisture reserves
-          collectively rather than competitively.
-        </p>
-
+        <p>Underground water retention systems shared between root structures.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
 
-<div id="popup-flup" class="popup-overlay">
-
-  <div class="popup-window fade-up">
-
-    <button class="close-popup">×</button>
+<div id="popupFlup" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupFlup" class="close-popup">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/greenflup.png">
       </div>
 
       <div class="popup-content">
-
         <small>Collective Organism</small>
-
         <h2>Viridiluma mollis</h2>
-
-        <p>
-          Small thermal organisms observed clustering into synchronized sleep formations.
-          Body temperature stabilizes only when the colony exceeds twelve individuals.
-        </p>
-
-        <p>
-          Audio recordings suggest low-frequency vibration exchange during rest cycles,
-          possibly functioning as distributed memory storage.
-        </p>
-
+        <p>Small green organisms synchronizing body temperature during collective sleep.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
 
-<div id="popup-calcite" class="popup-overlay">
-
-  <div class="popup-window fade-up">
-
-    <button class="close-popup">×</button>
+<div id="popupCalcite" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupCalcite" class="close-popup">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/stalactiten.jpg">
       </div>
 
       <div class="popup-content">
-
         <small>Mineral Formation</small>
-
         <h2>Photosensitive Calcite Structures</h2>
-
-        <p>
-          Calcite formations within the eastern chambers altered growth direction
-          after prolonged artificial light exposure.
-        </p>
-
-        <p>
-          Researchers documented behavior comparable to phototropism,
-          despite the structures remaining fully mineral-based.
-        </p>
-
+        <p>Stalactite systems behaving like phototropic organisms.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
 
-<div id="popup-nebula" class="popup-overlay">
-
-  <div class="popup-window fade-up">
-
-    <button class="close-popup">×</button>
+<div id="popupNebula" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupNebula" class="close-popup">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
         <img src="images/plant01.jpg">
       </div>
 
       <div class="popup-content">
-
         <small>Smoke Adaptive Flora</small>
-
         <h2>Nebula Folia</h2>
-
-        <p>
-          Dormant flora samples became metabolically active only after exposure
-          to ceremonial smoke compounds gathered during local ritual events.
-        </p>
-
-        <p>
-          Pigment layers shifted from grey to deep violet within minutes,
-          releasing airborne spores carrying high mineral density.
-        </p>
-
+        <p>Cave flora activated through ritual smoke exposure.</p>
       </div>
-
     </div>
-
   </div>
-
 </div>
 
 
-<div id="popup-cave" class="popup-overlay">
-
-  <div class="popup-window fade-up">
-
-    <button class="close-popup">×</button>
+<div id="popupBacteria" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupBacteria" class="close-popup">×</button>
 
     <div class="popup-grid">
-
       <div class="popup-image">
-        <img src="images/cave.png">
+        <img src="images/BacteriaCarpet.jpg">
       </div>
 
       <div class="popup-content">
+        <small>Bacterial Colony</small>
+        <h2>Pelvibacter lucens</h2>
+        <p>Fluorescent bacterial mineral surface systems.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <small>Geological Field System</small>
 
-        <h2>Ssymnac Cave Complex</h2>
+<div id="popupLove" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupLove" class="close-popup">×</button>
 
-        <p>
-          The Ssymnac Cave Complex functions less as a stable location and more
-          as a continuously shifting ecological archive.
-        </p>
-
-        <p>
-          Atmospheric currents transport spores, bacterial residues,
-          metallic dust and ritual smoke across disconnected chambers,
-          generating overlapping biological systems throughout the underground network.
-        </p>
-
-        <p>
-          Several researchers believe the cave itself acts as a distributed organism,
-          coordinating interactions between species through humidity, sound resonance,
-          and mineral conductivity.
-        </p>
-
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/love.png">
       </div>
 
+      <div class="popup-content">
+        <small>Symbiotic Relation</small>
+        <h2>Lichen Exchange Systems</h2>
+        <p>Mineral, bacteria and spores forming long-term mutual structures.</p>
+      </div>
     </div>
-
   </div>
-
 </div>
 
 
-<!-- IMAGE VIEWER -->
+<div id="popupAnt" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupAnt" class="close-popup">×</button>
 
-<div id="imageViewer" class="image-fullscreen">
-  <img id="imageViewerImg" src="">
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/ant-mushroom.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Fungal Symbiosis</small>
+        <h2>Formica mycelia</h2>
+        <p>Ant-fungal reciprocal nutrient systems.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 
+<div id="popupHuman" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupHuman" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Bacteriasymbiosis.jpg">
+      </div>
+
+      <div class="popup-content">
+        <small>Human-Bacterial Symbiosis</small>
+        <h2>Somatic Exchange Networks</h2>
+        <p>Human respiratory interaction with microbial cave atmospheres.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupAlien" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupAlien" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Alien.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Embossed Artefact</small>
+        <h2>Aerosymbiont</h2>
+        <p>Atmospheric organism linked to human transmission systems.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupAngel" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupAngel" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Angel.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Embossed Artefact</small>
+        <h2>CareUnit-Seraph</h2>
+        <p>Biomechanical care systems and mineral memory structures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupDragon" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupDragon" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Dragon.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Embossed Artefact</small>
+        <h2>Thermadrone</h2>
+        <p>Hybrid organism merged with drone skeletal systems.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupHirsch" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupHirsch" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Hirsch.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Embossed Artefact</small>
+        <h2>Cervoid Interface</h2>
+        <p>Mammal-navigation system integration structures.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupMoon" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupMoon" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Pfau.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Embossed Artefact</small>
+        <h2>Moonufowl</h2>
+        <p>Synthetic feather communication system.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupStars" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupStars" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Stars.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Cosmic System</small>
+        <h2>Stellar Drift Field</h2>
+        <p>Interconnected stellar communication fields.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popupTwins" class="popup-overlay">
+  <div class="popup-window">
+    <button id="closePopupTwins" class="close-popup">×</button>
+
+    <div class="popup-grid">
+      <div class="popup-image">
+        <img src="images/Twins.png">
+      </div>
+
+      <div class="popup-content">
+        <small>Biological Mirror Case</small>
+        <h2>Genetic Dual Formation</h2>
+        <p>Synchronized human developmental systems.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- IMAGE FULLSCREEN VIEW  -->
+  <div id="imageViewer" class="image-fullscreen">
+    <img id="imageViewerImg" src="">
+  </div>
+  
 <footer class="site-footer">
 
   <p>
