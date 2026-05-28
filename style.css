@@ -459,4 +459,10 @@ body{
 
   }
 
+  .contain-image{
+
+  object-fit:contain !important;
+
+}
+
 }
