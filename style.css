@@ -451,9 +451,9 @@ body{
     .result-image{
     height:auto;
     aspect-ratio:1/1;
-
+ }
+  
 .contain-image{
-
   object-fit:contain !important;
 
 }
