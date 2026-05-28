@@ -89,10 +89,12 @@ document.querySelector('.search-container button')
 
 /* RANDOMIZE GRID */
 const archiveGrid = document.querySelector('.archive-results-grid');
-const cardsArray = Array.from(archiveGrid.children);
+if (archiveGrid) {
+  const cardsArray = Array.from(archiveGrid.children);
+  cardsArray.sort(() => Math.random() - 0.5);
+  cardsArray.forEach(card => {
+    archiveGrid.appendChild(card);
 
-cardsArray.sort(() => Math.random() - 0.5);
+  });
 
-cardsArray.forEach(card => {
-  archiveGrid.appendChild(card);
-});
+}
