@@ -448,4 +448,15 @@ body{
     box-sizing:border-box;
   }
 
+    .result-image{
+    height:auto;
+    aspect-ratio:1/1;
+
+  }
+
+  .result-image img{
+    object-fit:contain;
+
+  }
+
 }
