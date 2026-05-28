@@ -384,14 +384,14 @@ body{
 }
 
 .site-footer a{
-  color:#444;
+  color:#6e0f1f;
   text-decoration:none;
   border-bottom:1px solid #ccc;
   transition:0.2s ease;
 }
 
 .site-footer a:hover{
-  color:#111;
+  color:#6e0f1f;
   border-bottom:1px solid #111;
 }
 /* MOBILE */
