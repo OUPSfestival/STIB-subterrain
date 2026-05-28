@@ -65,20 +65,26 @@ popupList.forEach(p => setupPopup(...p));
 
 
 /* SEARCH */
+
 const searchInput = document.getElementById('searchInput');
 const cards = document.querySelectorAll('.result-card');
 
 function runSearch() {
+
   const value = searchInput.value.toLowerCase().trim();
 
   cards.forEach(card => {
-    const searchable = (card.dataset.search || "").toLowerCase();
+
+    // searches all visible text inside the card
+    const fullText = card.innerText.toLowerCase();
 
     card.style.display =
-      value === "" || searchable.includes(value)
+      fullText.includes(value) || value === ""
         ? ""
         : "none";
+
   });
+
 }
 
 searchInput.addEventListener('input', runSearch);
