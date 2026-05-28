@@ -398,17 +398,21 @@ body{
 
 @media(max-width:900px){
 
-  .popup-grid{
-    grid-template-columns:1fr 1fr;
+  .conflict-grid{
+    grid-template-columns:1fr;
+
   }
 
-  .popup-content{
-    padding:28px;
+  .case-sidebar,
+  .conflict-main{
+    width:100%;
+    box-sizing:border-box;
+
   }
 
-  .topbar{
-    flex-direction:column;
-    gap:18px;
+  .positions-grid{
+    grid-template-columns:1fr;
+
   }
 
 }
