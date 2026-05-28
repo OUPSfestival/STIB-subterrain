@@ -39,7 +39,6 @@ body{
 }
 
 
-
 /* MAIN */
 
 .hero-europeana{
@@ -139,7 +138,12 @@ body{
   height:100%;
   object-fit:cover;
   display:block;
+  
+.result-image img.contain-image{
+  object-fit:contain;
+  padding:12px;
 
+}
 }
 
 .result-content{
@@ -395,8 +399,6 @@ body{
   color:#6e0f1f;
   border-bottom:1px solid #111;
 }
-/* MOBILE */
-
 /* MOBILE */
 
 @media(max-width:900px){
